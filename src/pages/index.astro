@@ -5,6 +5,10 @@ import SocialPill from '../components/SocialPill.astro'
 import LinkedInIcon from '../components/icons/LinkedIn.astro'
 import GitHubIcon from '../components/icons/GitHub.astro'
 import MailIcon from '../components/icons/Mail.astro'
+import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro'
+import BriefCaseIcon from '../components/icons/BriefCase.astro';
+
 ---
 
 <Layout 
@@ -12,7 +16,7 @@ import MailIcon from '../components/icons/Mail.astro'
 	description="Contrata a Juanjo para crear tu aplicacion web o movil. Desarrollador Web y Analista de datos. Especializado en crear soluciones únicas"
 >
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<SectionContainer class="py-44 pb-24">
 			<img 
   		  class="rounded-full size-12 nb-4"
   		  src="https://media.licdn.com/dms/image/v2/D4D35AQGU6VUCZK2fxw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1695660391058?e=1731164400&v=beta&t=byocoLJH439dgh5t9n8J0Jbm5vP184D-h5i_ztQWIqw"
@@ -48,6 +52,14 @@ import MailIcon from '../components/icons/Mail.astro'
 					juanjosecasaz@gmail.com
 				</SocialPill>
 			</nav>
-		</section>
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefCaseIcon class="size-7"/>
+				Experiencia laboral
+			</h2>
+			<Experience/>
+		</SectionContainer>
 	</main>
 </Layout>
